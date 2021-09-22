@@ -1,0 +1,28 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="mt-5" >
+    <div class="text-center">
+        <img src="{% static 'core/images/pic.jpg' %}" alt="Profile" class="img-thumbnail" width="250px" height="150px" >
+
+    </div>
+    <div class="mt-5 text-white mx-5 text-justify">
+        <h1 class="font-weight-bold st-font"> Hello, </h1>
+        <div class="px-4" style="line-height:2rem;">
+            <p style="text-indent:100px;">
+                I am <b class="text-warning"> Abhishek Mehta </b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, commodi velit laborum quibusdam consequatur recusandae possimus deleniti voluptas? Velit illo eaque error quis fugiat accusamus suscipit tenetur reiciendis optio perferendis?
+            </p>
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. <b class-"text-warning"> Django </b>Temporibus suscipit fugiat ducimus repudiandae officia earum veniam voluptates dolorem, id dolor?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis eos atque dolore eaque, error amet reprehenderit ut tempora, nihil esse inventore aliquid praesentium quasi voluptates nam minus numquam consequuntur.
+            <p>
+        </div>
+    </div>
+    <div class="text-center">
+        <a href="{% url 'contact' %}" class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+        <a href="{% url 'contact' %}" class="btn btn-outline-info my-3">Contact</a>
+    </div>
+
+</div>
+{% endblock content %}
